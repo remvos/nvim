@@ -493,8 +493,8 @@ cmp.setup {
   },
 }
 
-vim.keymap.set('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>')
-vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set('n', '<F4>', '<CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set('t', '<F4>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
