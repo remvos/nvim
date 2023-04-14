@@ -1,6 +1,8 @@
 return {
   "numToStr/FTerm.nvim",
   config = function()
-    require'FTerm'.setup({})
+    require'FTerm'.setup({
+      border = "rounded",
+    })
   end,
 }
