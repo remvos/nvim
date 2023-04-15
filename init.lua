@@ -113,20 +113,21 @@ require('lazy').setup({
   },
 
   { -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+    'folke/tokyonight.nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      vim.cmd.colorscheme 'tokyonight-night'
     end,
   },
 
   { -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
     -- See `:help lualine.txt`
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'tokyonight',
         component_separators = '|',
         section_separators = '',
       },
@@ -493,6 +494,7 @@ cmp.setup {
 
 vim.keymap.set('n', '<F4>', '<CMD>lua require("FTerm").toggle()<CR>')
 vim.keymap.set('t', '<F4>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set('n', '<F2>', '<CMD>Neotree toggle action=focus position=float<CR>')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
