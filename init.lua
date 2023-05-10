@@ -418,6 +418,11 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+  yamlls = {
+    yaml = {
+      keyOrdering = false
+    }
+  },
 }
 
 -- Setup neovim lua configuration
